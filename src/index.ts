@@ -152,8 +152,6 @@ console.log("hello World my name is khan...");
 // console.log(funcMaking(23,7));
 
 
-
-
 // -------------------------------------------tuple in ts--------------------------------------------------------
 // a tuple is a fixed-size array where each element has a specific type. 
 // Tuples are particularly useful when you want to represent a collection
@@ -162,6 +160,16 @@ console.log("hello World my name is khan...");
 // type MakeTuple = [string,boolean,number];
 // const checkTuple:MakeTuple = ["Jawwad",true,123];
 // console.log(checkTuple);
+
+
+
+// --------------------------------------------Generic in ts-----------------------------------------------------
+type Wrapped<T> = { value: T };
+
+const valueb: Wrapped<number> = { value: 10 };
+
+
+console.log(valueb);
 
 
 
